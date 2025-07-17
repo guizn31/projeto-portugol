@@ -1,0 +1,24 @@
+programa {
+  funcao inicio() {
+
+  inteiro quantidade_redstone
+  logico redstone_suficiente
+
+  quantidade_redstone = 0
+  redstone_suficiente = falso
+
+  escreva("Procurando caverna...", "\n", "Descendo para as camadas 15 e 17...", "\n", "Procurando fontes de lava...", "\n", "\n")
+
+  faca{
+    escreva("Quebrando minério de redstone\n")
+    quantidade_redstone = quantidade_redstone + 1
+    escreva("Redstone atual: ", quantidade_redstone, "\n", "\n")
+   } enquanto (quantidade_redstone < 48)
+
+   se (quantidade_redstone == 48){
+     redstone_suficiente = verdadeiro
+    }
+  escreva("Redstone suficiente coletado!! Quantidade total: ", quantidade_redstone, "\n")
+    
+  }
+}

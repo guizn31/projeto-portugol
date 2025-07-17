@@ -1,0 +1,24 @@
+programa {
+  funcao inicio() {
+
+  inteiro quantidade_diamante
+  logico diamante_suficiente
+
+  quantidade_diamante = 0
+  diamante_suficiente = falso
+
+  escreva("Procurando caverna...", "\n", "Descendo para as camadas 15 e 17...", "\n", "Procurando fontes de lava...", "\n", "\n")
+
+  faca{
+    escreva("Quebrando minério de diamante\n")
+    quantidade_diamante = quantidade_diamante + 1
+    escreva("Dimante atual: ", quantidade_diamante, "\n", "\n")
+   } enquanto (quantidade_diamante < 18)
+
+   se (quantidade_diamante == 18){
+     diamante_suficiente = verdadeiro
+    }
+  escreva("Esmeralda suficiente coletado!! Quantidade total: ", quantidade_diamante, "\n")
+    
+  }
+}

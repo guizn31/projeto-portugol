@@ -1,0 +1,24 @@
+programa {
+  funcao inicio() {
+
+  inteiro quantidade_lasuli
+  logico lasuli_suficiente
+
+  quantidade_lasuli = 0
+  lasuli_suficiente = falso
+
+  escreva("Procurando caverna...", "\n", "Descendo para as camadas 15 e 17...", "\n", "Procurando fontes de lava...", "\n", "\n")
+
+  faca{
+    escreva("Quebrando minério de lápis lasuli\n")
+    quantidade_lasuli = quantidade_lasuli + 1
+    escreva("Lápis lasuli atual: ", quantidade_lasuli, "\n", "\n")
+   } enquanto (quantidade_lasuli < 48)
+
+   se (quantidade_lasuli == 48){
+     lasuli_suficiente = verdadeiro
+    }
+  escreva("Lápis lasuli suficiente coletado!! Quantidade total: ", quantidade_lasuli, "\n")
+    
+  }
+}

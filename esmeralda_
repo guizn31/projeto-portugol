@@ -1,0 +1,24 @@
+programa {
+  funcao inicio() {
+
+  inteiro quantidade_esmeralda
+  logico esmeralda_suficiente
+
+  quantidade_esmeralda = 0
+  esmeralda_suficiente = falso
+
+  escreva("Procurando caverna...", "\n", "Descendo para as camadas 15 e 17...", "\n", "Procurando por fontes de lava...", "\n", "\n")
+
+  faca{
+    escreva("Quebrando minério de esmeralda\n")
+    quantidade_esmeralda = quantidade_esmeralda + 1
+    escreva("Esmeralda atual: ", quantidade_esmeralda, "\n", "\n")
+   } enquanto (quantidade_esmeralda < 12)
+
+   se (quantidade_esmeralda == 12 ){
+     esmeralda_suficiente = verdadeiro
+    }
+  escreva("Esmeralda suficiente coletado!! Quantidade total: ", quantidade_esmeralda, "\n")
+    
+  }
+}
